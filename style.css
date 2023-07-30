@@ -69,14 +69,20 @@ button {
 
 #progress-bar {
   background-color: rgb(139, 153, 156);
-  height: 3px;
+  height: 5px;
   width: 100%;
   border-radius: 15px;
   margin-bottom: 1em;
 }
 
 #current-progress {
+  --progress: 0%;
   background-color: white;
   height: inherit;
+  width: var(--progress);
   border-radius: inherit;
+}
+
+#progress-container {
+  padding-bottom: 1em;
 }
